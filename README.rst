@@ -35,11 +35,15 @@ The database for this prototype will simply be a local SQLite names `files.db`.
 This database will have a simplified schema consisting of a single table
 called `files` with the following schema:
 
-Name    Type        Details
-
-id      TEXT        A UUID4 that identifies the file.
-hash    BLOB        A SHA256 hash that verifies the file.
-path    TEXT        The path relative to the watched directory.
++--------+-----------+----------------------------------------------+
+| Name   | Type      | Details                                      |
++========+===========+==============================================+
+| id     | TEXT      | A UUID4 that identifies the file.            |
++--------+-----------+----------------------------------------------+
+| hash   | BLOB      | A SHA256 hash that verifies the file.        |
++--------+-----------+----------------------------------------------+
+| path   | TEXT      | The path relative to the watched directory.  |
++--------+-----------+----------------------------------------------+
 
 This schema is designed for small scale tests only.
 
