@@ -9,11 +9,23 @@ app = web.application(urls, globals())
 
 
 class Files(object):
+    """This object manages collections of files.
+
+    If a client sends a request to /Files then this object will manage that
+    request.
+    """
+
     def GET(self):
         raise NotImplementedError()
 
 
 class File(object):
+    """This object manages instances of files.
+
+    If a client sends a request to /Files/<UUID> then this object will manage
+    that request.
+    """
+
     def GET(self, id):
         raise NotImplementedError()
 
