@@ -96,9 +96,7 @@ installed. Would it *Add: Feature X* or *Fix: Issue #00000*?
 Docstrings
 ----------
 
-Docstrings should use the following pattern:
-
-.. code-block:: python
+Docstrings should use the following pattern::
 
     """One line description of function/class.
 
