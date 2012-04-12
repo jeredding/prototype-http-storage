@@ -1,8 +1,8 @@
 import web
 
 urls = (
-    '[fF]ile[s]?/', 'Files',
-    '[fF]ile[s]?/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})', 'File',
+    '[fF]ile[s]?/?', 'Files',
+    '[fF]ile[s]?/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/?', 'File',
 )
 
 app = web.application(urls, globals())
