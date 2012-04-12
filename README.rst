@@ -44,6 +44,8 @@ called `files` with the following schema:
 +--------+-----------+----------------------------------------------+
 | path   | TEXT      | The path relative to the watched directory.  |
 +--------+-----------+----------------------------------------------+
+| size   | INTEGER   | The size in bytes of the file.               |
++--------+-----------+----------------------------------------------+
 
 This schema is designed for small scale tests only.
 
