@@ -21,9 +21,9 @@ FS Daemon
 ---------
 
 The daemon process that watches for changes within the directory tree will be
-driven by the `PyInotify library <https://github.com/seb-m/pyinotify>`_.
-Should the PyInotify library prove insufficient, the 
-`Watchdog library <https://github.com/gorakhargosh/watchdog>`_ will be tested.
+driven by the `Watchdog library <https://github.com/gorakhargosh/watchdog>`_.
+Should the Watchdog library prove insufficient, the
+`PyInotify library <https://github.com/seb-m/pyinotify>`_ library will be used.
 For the purposes of this prototype, the daemon process will not expose any
 type of API. Instead it will simply keep a local SQLite database updated for
 use by the web service.
